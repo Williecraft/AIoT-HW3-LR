@@ -175,3 +175,31 @@ outputs/prediction_interval_selected_features.png
 Codex 檢查後確認大項皆已完成，但為了讓評分老師更容易對照，已在 `4112056012_report.md` 新增「評分標準對照」章節，逐項標示 CRISP-DM、GPT 對話、NotebookLM 摘要、資料集來源、特徵選擇、模型評估、圖表呈現與 Kaggle 名次不適用說明。另於第一章補充本資料集非 Kaggle competition，因此沒有 Kaggle 排名，改以預測圖、約 95% 預測區間與評估指標呈現成果。
 
 因為 `4112056012_report.md` 已再次更新，使用者需要重新輸出 `4112056012_report.pdf`。
+
+### 2026-05-13 README 與提交壓縮檔補強
+
+使用者指出作業說明中提到：「若上傳至 GitHub，或是以 Colab 撰寫，需提供連結，並在 README.md 中整理流程與成果。」Codex 檢查後發現 README 雖有執行流程，但 GitHub 連結與成果摘要不夠明顯，因此已更新 `README.md`，加入：
+
+```text
+GitHub 連結
+已完成流程
+分析成果
+模型評估表
+SelectKBest 特徵選擇結果
+輸出圖表清單
+Kaggle 名次不適用說明
+```
+
+Codex 也重新產生 `4112056012_hw2.zip`，並將 README 與 zip 推送到 GitHub。
+
+```text
+GitHub repo: https://github.com/Williecraft/AIoT-HW3-LR
+Latest commit: 099be1b Update README with workflow and results
+Status: 已成功推送到 origin/main
+```
+
+使用者提醒之後若有更新，Codex 要記得自行 `git push`，不需要使用者再次提醒。Codex 已確認後續修改會在完成後直接 commit 並 push。
+
+### 2026-05-13 chat.md 同步更新
+
+使用者詢問 `chat.md` 是否也有更新。Codex 確認 README 補強與提交壓縮檔的紀錄尚未寫入 `chat.md`，因此補上本段紀錄。由於 `chat.md` 已更新，若要讓 GPT 對話 PDF 與最新版 Markdown 完全一致，使用者需要重新將 `chat.md` 匯出為 `chat.pdf`，再重新產生最終提交 zip。
