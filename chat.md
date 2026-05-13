@@ -154,3 +154,24 @@ Status: 已成功推送到 origin/main
 ```
 
 最後檢查結果：主程式、報告 Markdown、報告 PDF、README、作業要求整理、NotebookLM 回覆、模型輸出圖表與資料集都已存在。仍需注意若老師要求 GPT 對話必須是 PDF，使用者需將最新版 `chat.md` 或完整聊天頁面匯出為 GPT 對話 PDF。
+
+### 2026-05-13 補強報告圖表呈現
+
+使用者指出評分標準包含「結果合理、美觀且具有說服力」，但報告 Markdown 內沒有直接看到圖。Codex 檢查後確認原本報告只有列出圖檔路徑，沒有嵌入圖片，因此已更新 `4112056012_report.md`，加入：
+
+```text
+outputs/correlation_heatmap.png
+outputs/selected_features.png
+outputs/prediction_interval_all_features.png
+outputs/prediction_interval_selected_features.png
+```
+
+同時補上每張圖的說明文字，讓報告轉 PDF 後能直接呈現相關係數圖、特徵選擇圖與預測區間圖。因為 `4112056012_report.md` 已更新，使用者需要重新將報告 Markdown 轉成 `4112056012_report.pdf`。
+
+### 2026-05-13 評分標準逐項複查
+
+使用者要求依照評分標準重新檢查每個部分是否做到最好。
+
+Codex 檢查後確認大項皆已完成，但為了讓評分老師更容易對照，已在 `4112056012_report.md` 新增「評分標準對照」章節，逐項標示 CRISP-DM、GPT 對話、NotebookLM 摘要、資料集來源、特徵選擇、模型評估、圖表呈現與 Kaggle 名次不適用說明。另於第一章補充本資料集非 Kaggle competition，因此沒有 Kaggle 排名，改以預測圖、約 95% 預測區間與評估指標呈現成果。
+
+因為 `4112056012_report.md` 已再次更新，使用者需要重新輸出 `4112056012_report.pdf`。
