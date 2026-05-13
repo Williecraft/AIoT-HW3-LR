@@ -141,3 +141,16 @@ outputs/selected_features.png
 outputs/prediction_interval_all_features.png
 outputs/prediction_interval_selected_features.png
 ```
+
+### 2026-05-13 GitHub 推送完成
+
+Codex 已成功將作業檔案推送到 GitHub：
+
+```text
+GitHub repo: https://github.com/Williecraft/AIoT-HW3-LR
+Branch: main
+Commit: f7baca3 Complete linear regression homework
+Status: 已成功推送到 origin/main
+```
+
+最後檢查結果：主程式、報告 Markdown、報告 PDF、README、作業要求整理、NotebookLM 回覆、模型輸出圖表與資料集都已存在。仍需注意若老師要求 GPT 對話必須是 PDF，使用者需將最新版 `chat.md` 或完整聊天頁面匯出為 GPT 對話 PDF。
